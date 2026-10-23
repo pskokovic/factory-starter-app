@@ -21,6 +21,23 @@ export default function Header() {
           <path d="M10 20v-6h4v6" />
         </svg>
       </Link>
+      <span className="site-name">Factory Starter App</span>
+      <nav aria-label="Main navigation" className="nav">
+        <ul className="nav-list">
+          <li>
+            <a href="#features">Features</a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/pskokovic/factory-starter-app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }
