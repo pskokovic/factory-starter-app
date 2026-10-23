@@ -53,6 +53,8 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
   padding: 1rem 1.5rem;
   border-bottom: 1px solid rgba(128, 128, 128, 0.3);
 }
@@ -64,4 +66,97 @@ a {
 
 .main {
   padding: 2rem 1.5rem;
+}
+
+.site-name {
+  font-weight: 600;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 4rem 0 3rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 6vw + 0.5rem, 3.5rem);
+  line-height: 1.1;
+}
+
+.hero-description {
+  margin: 1.25rem 0 2rem;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.85rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  color: var(--background);
+  background: var(--foreground);
+}
+
+.button:hover {
+  opacity: 0.85;
+}
+
+.button:focus-visible,
+.nav-list a:focus-visible,
+.home-link:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}
+
+.button:focus-visible {
+  outline-color: #3b82f6;
+}
+
+.features {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1rem 0 3rem;
+  text-align: center;
+}
+
+.features ul {
+  margin-top: 1rem;
+  list-style: none;
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    margin-left: 0;
+  }
+
+  .hero {
+    padding: 2rem 0;
+  }
+
+  .button {
+    display: block;
+    width: 100%;
+  }
 }
