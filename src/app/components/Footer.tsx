@@ -1,9 +1,9 @@
-import { cacheLife } from "next/cache";
+import { connection } from "next/server";
 
 export default async function Footer() {
-  "use cache";
-  // Revalidate hourly so the year rolls over soon after New Year.
-  cacheLife("hours");
+  // Wait for an incoming request so the year is computed per request,
+  // never during prerendering or from a cache.
+  await connection();
 
   const year = new Date().getFullYear();
 
