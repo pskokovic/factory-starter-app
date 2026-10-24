@@ -173,3 +173,12 @@ a {
     width: 100%;
   }
 }
+
+.footer {
+  margin-top: auto;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
+  color: var(--foreground);
+  font-size: 0.875rem;
+  text-align: center;
+}
