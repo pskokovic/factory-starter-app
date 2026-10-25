@@ -5,6 +5,14 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header-left">
+        <Image
+          src="/logo.png"
+          alt="Factory Starter App logo"
+          width={128}
+          height={128}
+          className="logo"
+          priority
+        />
         <Link href="/" aria-label="Home" className="home-link">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -25,14 +33,6 @@ export default function Header() {
         </Link>
         <span className="site-name">Factory Starter App</span>
       </div>
-      <Image
-        src="/logo.png"
-        alt="Factory Starter App logo"
-        width={128}
-        height={128}
-        className="logo"
-        priority
-      />
       <nav aria-label="Main navigation" className="nav">
         <ul className="nav-list">
           <li>
