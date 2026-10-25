@@ -1,12 +1,14 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --footer-text: #333333;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --footer-text: #cccccc;
   }
 }
 
@@ -174,7 +176,7 @@ a {
   margin-top: auto;
   padding: 1rem 1.5rem;
   border-top: 1px solid rgba(128, 128, 128, 0.3);
-  color: var(--foreground);
+  color: var(--footer-text);
   font-size: 0.875rem;
   text-align: center;
 }
